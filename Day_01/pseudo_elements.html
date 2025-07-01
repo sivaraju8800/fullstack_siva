@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            background-color: rgba(0, 0, 255, 0.808);
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow:transparent;
+        }
+        button::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height:10px;
+            background-color: red;
+            z-index: -1;
+            transform: translate(-77px);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button>Click-Me</button>
+</body>
+</html>
