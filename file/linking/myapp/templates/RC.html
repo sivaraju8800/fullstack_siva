@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siva file</title>
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="image">
+                <img src="{%  static 'img/logo.jpg' %}" alt="">
+            </div>
+           <li ><a href="{%  url 'home' %}">HOME</a></li>
+            <li ><a href="{%  url 'siva' %}">SIVA</a></li>
+            <li ><a href="{%  url 'RC' %}">RAM CHARAN</a></li>
+            <li ><a href="{%  url 'NTR' %}">NTR</a></li>
+            <li ><a href="{%  url 'pk' %}">PAWAN KALYAN</a></li>
+            <li ><a href="{%  url 'prabhas' %}">PRABHAS</a></li>
+        </ul>
+    </nav>
+    <section class="one">
+        <div class="info">
+            <img src="{%  static 'img/rc.jpg' %}" alt="">
+            <div class="intro">
+                <h2>Ram Charan</h2>
+                <h3>CINE INDUSTRY</h3>
+                <p>AGE : 55 </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
