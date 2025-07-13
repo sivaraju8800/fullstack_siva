@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    
+    <div class="navBar">
+        <h6>HOME</h6>
+        <div class="dropDown">
+            <button class="dropBtn">SEMESTER-01</button>
+            <div class="dropContent">
+                <a href="{% url 'dms' %}">DMS</a>
+                <a href="{% url 'java' %}">Java</a>
+                <a href="{% url 'co' %}">CO</a>
+                <a href="{% url 'os' %}">OS</a>
+                <a href="{% url 'afm' %}">AFM</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <button class="dropBtn">SEMESTER-02</button>
+            <div class="dropContent">
+                <a href="{% url 'coor' %}">COOR</a>
+                <a href="{% url 'ds_java' %}">DS Java</a>
+                <a href="{% url 'dccn' %}">DCCN</a>
+                <a href="{% url 'e_commerce' %}">E-Commerce</a>
+                <a href="{% url 'adbms' %}">ADBMS</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <button class="dropBtn">SEMESTER-03</button>
+            <div class="dropContent">
+                <a href="#">SUB-01</a>
+                <a href="#">SUB-02</a>
+                <a href="#">SUB-03</a>
+                <a href="#">SUB-04</a>
+                <a href="#">SUB-05</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <button class="dropBtn">SEMESTER-04</button>
+            <div class="dropContent">
+                <a href="#">SUB-01</a>
+                <a href="#">SUB-02</a>
+                <a href="#">SUB-03</a>
+                <a href="#">SUB-04</a>
+                <a href="#">SUB-05</a>
+            </div>
+        </div>
+        <div class="profile">
+            <button class="dropBtn">Profile</button>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'master.html' %}
+
+{% block content %}
+    {% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <div class="subject">
+        <h6>Advanced Data Base Management System</h6>
+        <p>
+           A Database Management System (DBMS) is software designed 
+           to manage and organize data within a database, providing 
+           an interface for users to interact with the data. It allows
+            users to create, retrieve, update, and delete data, while 
+            also handling security, data integrity, and concurrency control.
+             Essentially, a DBMS acts as a bridge between users and the underlying 
+             data, making it easier to manage and access information efficiently.  
+        </p>
+    </div>
+{% endblock %}
