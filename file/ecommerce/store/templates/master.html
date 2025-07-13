@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #33333333;
+            width: 100%;
+            height: fit-content;
+        }
+        .navBar{
+            width: 100%;
+            height: 10vh;
+            background-color: rgba(0, 0, 0, 0.151);
+            padding: 20px 0 0 20px;
+        }
+        .navBar img{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            float: left;
+        }
+        .navBar .navInfo{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            text-align: center;
+            float: left;
+            margin-left: 600px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="navBar">
+        <img src="{% static 'img/logo.jpg' %} ">
+        <div class="navInfo">
+            <h3>Mother Theresa Institute of Computer Applications</h3>
+            <p>Melumoi, Palamaner - 517408</p>
+        </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
